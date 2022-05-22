@@ -41,7 +41,26 @@
 
     <!-- TO-DO-LIST CONTAINER -->
     <div class="to-do-list-container">
-      <div class="to-do-list"></div>
+
+      <div class="to-do-list">
+
+        <!-- DIALOG TO ADD TODO ITEM -->
+        <div class="todo-dialog">
+          <h2>Add Todo Item</h2>
+          <div class="todo-not-head">
+            <div class="todo-inputs">
+              <input type="text" name="text" id="topic" placeholder="Title">
+              <textarea name="text" id="description" cols="30" rows="10" placeholder="Descripton..."></textarea>
+            </div>
+            <div class="todo-actions">
+              <button type="submit" id="cancelBtn">Cancel</button>
+              <button type="submit" id="addBtn">Add</button>
+            </div>
+          </div>
+        </div>
+        <!-- END OF DIALOG TO ADD TODO ITEM -->
+
+      </div>
 
       <!-- DESKTOP SITE MENU AS SIDE BAR -->
       <div class="desktop-menu">
@@ -70,6 +89,7 @@
       <i class="fas fa-add"></i>
     </div>
     <!-- END OF FAB/ADD FLOATING BUTTON -->
+
 
   </div>
   <!-- End of main container -->
