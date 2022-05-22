@@ -1,0 +1,162 @@
+/* GLOBAL STYLES */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Colors Variables */
+:root {
+  --mainGreen: #037516;
+  --mainWhite: #ffffff;
+}
+/* End of Colors Variables */
+
+/* END OF GLOBAL STYLES */
+
+/* ********************************************************************* */
+
+/* HEADING STYLE */
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  background-color: var(--mainGreen);
+  color: var(--mainWhite);
+}
+
+.app-name {
+  font-size: 30px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  width: 25%;
+  /* background-color: red; */
+}
+
+.desktop-menu {
+  width: 30vw;
+  height: 100vh;
+  background-color: red;
+  display: none;
+}
+
+/* Heading Destop Style */
+@media screen and (min-width: 550px) {
+  .desktop-menu {
+    display: flex;
+  }
+
+  .menu-for-desktop {
+    width: 80%;
+    /* background-color: yellow; */
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    font-size: 35px;
+    /* background-color: grey; */
+    margin: 20px 0;
+    line-height: 60px;
+    padding-left: 30px;
+    color: var(--mainWhite);
+  }
+
+  .menu-item h5 {
+    margin-left: 30px;
+  }
+}
+/* End of Heading Destop Style */
+
+/* END OF HEADING STYLE */
+
+/* ********************************************************************* */
+
+/* FAB BUTTON STYLES */
+.fab-btn {
+  background-color: var(--mainGreen);
+  font-size: 30px;
+  font-weight: 900;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  /* padding: 20px; */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--mainWhite);
+  animation-name: pulse;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Fab Button Desktop Styles */
+@media screen and (min-width: 550px) {
+  .fab-btn {
+    right: 35vw;
+  }
+}
+/* End of Fab Button Desktop Styles */
+
+/* END OF FAB BUTTON STYLES */
+
+/* ********************************************************************* */
+
+/* TO-DO-LIST STYLES */
+.to-do-list-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.to-do-list {
+  width: 100vw;
+  height: 100vh;
+  background-color: blue;
+  /* position: relative; */
+}
+
+/* To-do-list Desktop Screen */
+@media screen and (min-width: 550px) {
+  .to-do-list {
+    width: 65vw;
+  }
+}
+/* End of To-do-list Desktop Screen */
+
+/* END OF TO-DO-LIST STYLES */
+
+/* ********************************************************************* */
+
+
