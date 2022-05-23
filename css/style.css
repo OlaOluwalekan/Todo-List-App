@@ -11,6 +11,7 @@
   --mainWhite: #ffffff;
   --mainGrey: #e9e3e3;
   --mainRed: #c40101;
+  --shadowBlack: #272525;
 }
 /* End of Colors Variables */
 
@@ -129,6 +130,7 @@ header {
     font-size: 50px;
     width: 70px;
     height: 70px;
+    transform: scale(1);
   }
 }
 /* End of Fab Button Desktop Styles */
@@ -149,6 +151,7 @@ header {
   width: 100vw;
   height: 100vh;
   background-color: var(--mainGrey);
+  padding: 10px;
   /* position: relative; */
 }
 
@@ -228,7 +231,7 @@ header {
   background-color: var(--mainRed);
 }
 
-#addBtn {
+#addBtn, #updateBtn {
   background-color: var(--mainGreen);
 }
 
@@ -276,6 +279,61 @@ header {
 /* END OF DIALOG TO ADD TODO ITEMS */
 
 /* ********************************************************************* */
+/* ITEM LIST STYLES */
+.item-list {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--mainWhite);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 7px var(--shadowBlack);
+  margin: 10px 0;
+}
+
+.todo-topic {
+  color: var(--mainGreen);
+  margin: 5px 0;
+}
+
+.todo-details {
+  margin: 5px 0;
+  /* background-color: yellow; */
+  height: 25px;
+  overflow: hidden;
+}
+
+.todo-extras {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.edit-delete {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;  
+  width: 10%;
+}
+
+.edit {
+  color: var(--mainGreen);
+}
+
+.delete {
+  color: var(--mainRed);
+}
+
+.created-time {
+  font-size: 13px;
+  color: var(--mainRed);
+  font-weight: 300;
+}
+
+
+/* END OF ITEM LIST STYLES */
 /* ********************************************************************* */
 /* ********************************************************************* */
 
