@@ -16,6 +16,10 @@
   <!-- main container for the app -->
   <div class="container">
 
+    <div class="tool-tip">
+      <p class="tool-tip-text">Tool tip</p>
+    </div>
+
     <!-- Site Header -->
     <header>
       
@@ -43,7 +47,7 @@
     <div class="to-do-list-container">
 
       <div class="to-do-list">
-        <div class="item-list">
+        <!-- <div class="item-list">
           <h3 class="todo-topic">Topic</h3>
           <div class="todo-details">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sint dolorem placeat reprehenderit itaque praesentium
@@ -60,23 +64,7 @@
               </div>
             </div>
           </div>
-        </div>
-
-        <!-- DIALOG TO ADD TODO ITEM -->
-        <div class="todo-dialog">
-          <h2>Add Todo Item</h2>
-          <div class="todo-not-head">
-            <div class="todo-inputs">
-              <input type="text" name="text" id="topic" placeholder="Title">
-              <textarea name="text" id="description" cols="30" rows="10" placeholder="Descripton..."></textarea>
-            </div>
-            <div class="todo-actions">
-              <button type="submit" id="cancelBtn">Cancel</button>
-              <button type="submit" id="addBtn">Add</button>
-            </div>
-          </div>
-        </div>
-        <!-- END OF DIALOG TO ADD TODO ITEM -->
+        </div> -->
 
       </div>
 
@@ -107,6 +95,39 @@
       <i class="fas fa-add"></i>
     </div>
     <!-- END OF FAB/ADD FLOATING BUTTON -->
+
+    <!-- DIALOG TO ADD TODO ITEM -->
+    <div class="todo-dialog">
+      <h2>Add Todo Item</h2>
+      <div class="todo-not-head">
+        <div class="todo-inputs">
+          <input type="text" name="text" id="topic" placeholder="Title">
+          <textarea name="text" id="description" cols="30" rows="10" placeholder="Descripton..."></textarea>
+        </div>
+        <div class="todo-actions">
+          <button type="submit" id="cancelBtn" accesskey="C">Cancel</button>
+          <button type="submit" id="addBtn">Add</button>
+        </div>
+      </div>
+    </div>
+    <!-- END OF DIALOG TO ADD TODO ITEM -->
+
+    <!-- CONFIRN DIALOG -->
+    <div class="confirm-dialog">
+      <h3 class="confirm-header">Are you sure you want to delete todo <span class="to-delete">To do name</span>?</h3>
+      <div class="confirm-actions">
+        <button type="submit" id="cancelConfirm">Cancel</button>
+        <button type="submit" id="proceedConfirm">Confirm</button>
+      </div>
+    </div>
+    <!-- END OF CONFIRN DIALOG -->
+
+    <!-- TOAST MESSAGE -->
+    <div class="toast">
+      <h6 class="toast-msg">Some Toast message</h6>
+    </div>
+    <!-- END OF TOAST MESSAGE -->
+
 
 
   </div>

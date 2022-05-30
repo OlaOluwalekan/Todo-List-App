@@ -10,6 +10,7 @@
   --mainGreen: #037516;
   --mainWhite: #ffffff;
   --mainGrey: #e9e3e3;
+  --darkGrey: #838181;
   --mainRed: #c40101;
   --shadowBlack: #272525;
 }
@@ -42,6 +43,10 @@ header {
   font-size: 20px;
   width: 25%;
   /* background-color: red; */
+}
+
+.menu select {
+  display: none;
 }
 
 .desktop-menu {
@@ -169,7 +174,7 @@ header {
 
 /* DIALOG TO ADD TODO ITEMS */
 .todo-dialog {
-  position: absolute;
+  position: fixed;
   bottom: 15%;
   background-color: var(--mainWhite);
   padding: 20px;
@@ -183,6 +188,9 @@ header {
   align-items: center;
   justify-content: center;
   border-radius: 10px;
+  box-shadow: 1px 1px 7px var(--shadowBlack);
+  opacity: 1;
+  z-index: 20;
 }
 
 .todo-dialog h2 {
@@ -334,6 +342,96 @@ header {
 
 
 /* END OF ITEM LIST STYLES */
+
+/* ********************************************************************* */
+
+/* CONFIRM DIALOG BOX STYLES */
+.confirm-dialog {
+  position: fixed;
+  top: 40%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: var(--mainWhite);
+  padding: 30px 15px;
+  box-shadow: 1px 1px 7px var(--shadowBlack);
+  border-radius: 5px;
+  width: 60%;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.confirm-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0 5px 0;
+  width: 100%;
+}
+
+.confirm-actions button {
+  width: 30%;
+  padding: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 900;
+  color: white;
+}
+
+#cancelConfirm {
+  background-color: var(--mainRed);
+}
+
+#proceedConfirm {
+  background-color: var(--mainGreen);
+}
+/* END OF CONFIRM DIALOG BOX STYLES */
+
+/* ********************************************************************* */
+
+/* TOAST MESSAGE STYLE */
+.toast {
+  font-size: 20px;
+  position: fixed;
+  bottom: -80px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: fit-content;
+  background-color: var(--shadowBlack);
+  color: var(--mainWhite);
+  padding: 5px 20px;
+  border-radius: 20px;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* END OF TOAST MESSAGE STYLE */
+
+/* ********************************************************************* */
+
+/* TOOL TIP STYLES */
+.tool-tip {
+  background-color: red;
+  width: 100px;
+  border-radius: 5px;
+  padding: 10px 5px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 10px;
+  z-index: 20;
+}
+/* END OF TOOL TIP STYLES */
+
 /* ********************************************************************* */
 /* ********************************************************************* */
 
